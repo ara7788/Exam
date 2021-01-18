@@ -32,6 +32,7 @@ body {
 
     .data-day-header {
         display: flex;
+        border-bottom: 1px solid @primary;
         padding: 0px;
         margin: 0px;
         user-select: none;
@@ -41,7 +42,7 @@ body {
         .header-date {
             padding: 0px;
             margin: 0px;
-            border: 1px solid @primary;
+            //border: 1px solid @primary;
             width: 40%;
             
             a {
@@ -49,48 +50,49 @@ body {
             }
         }
         .nav-mm-left {
-            border: 1px solid @primary;
+            border-right: 1px solid @primary;
             width: 10%;
         }
         .nav-ww-left {
-            border: 1px solid @primary;
+            border-right: 1px solid @primary;
             width: 10%;
         }
         .nav-dd-left {
-            border: 1px solid @primary;
+            border-right: 1px solid @primary;
             width: 10%;
             vertical-align: middle;
 
         }
         .nav-dd-right {
-            border: 1px solid @primary;
+            border-left: 1px solid @primary;
             width: 10%;
         }
         .nav-ww-right {
-            border: 1px solid @primary;
+            border-left: 1px solid @primary;
             width: 10%;
         }
         .nav-mm-right {
-            border: 1px solid @primary;
+            border-left: 1px solid @primary;
             width: 10%;
         }
     }
     .data-day-body {
         
         .day-row {            
-            border: 1px solid @primary;
+            //border: 1px solid @primary;
             user-select: none;
 
             .day-col-hour {
                 display: inline-block;
                 border-right: 1px solid @primary;
+                border-bottom: 1px solid @primary;
                 width: 4%;
-                vertical-align: middle;
+                //vertical-align: middle;
                 text-align: center;
             }
             .day-col-schedule {
                 display: inline-block;
-                //border-left: 1px solid @primary;
+                border-bottom: 1px solid @primary;
                 width: 95%;
                 text-align: left;
                 cursor: pointer;
@@ -107,12 +109,17 @@ body {
     border: 1px solid @primary;
     padding: 0px;
     margin: 0px;
+    width: auto;
+    height: auto;
+
 
     .data-month-header {
         text-align: center;
+        border-bottom: 1px solid @primary;
+        font-weight: bold;
     }
     .data-month-body {
-        border: 1px solid @primary;
+        //border: 1px solid @primary;
         display: block;
 
         .month-body-header {
@@ -120,19 +127,50 @@ body {
             border-bottom: 1px solid @primary;            
             
             .day-of-ww {
-                border: 1px solid @primary;
+                border-right: 1px solid @primary;
+                width: 100%;
+                font-weight: bold;
+                text-align: center;
             }
         }
         .month-body-menu {
             display: flex;
 
             .day-of-mm {
-                border: 1px solid @primary;
+                border-right: 1px solid @primary;
+                width: 100%
             }
         }                
     }
     .data-month-footer {
+        border-top: 1px solid @primary;
         text-align: center;
     }
 }                
 
+.data-week{
+    border: 1px solid @primary;
+    .data-week-header {
+        border-bottom: 1px solid @primary;
+        text-align: center;
+        font-weight: bold;
+    }
+    .data-week-body {
+        //border: 1px solid @primary;
+        .week-body-day-row {
+            display: flex;
+        }
+        .week-body-day-name {
+            border-right: 1px solid @primary;
+            border-bottom: 1px solid @primary;
+            width: 10%;
+        }
+        .week-day-schedule-list {
+            border-bottom: 1px solid @primary;
+            width: 100%;
+        }
+    }
+    .data-week-footer {
+        text-align: center;
+    }
+}
