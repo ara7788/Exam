@@ -1,0 +1,127 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Tahoma";
+  font-size: 14px;
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+body {
+  margin: 40px;
+  padding: 40px;
+}
+.data-day {
+  border: 1px solid #2980b9;
+  padding: 0px;
+  margin: 0px;
+}
+.data-day .data-day-header {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  user-select: none;
+  width: 100%;
+  text-align: center;
+}
+.data-day .data-day-header .header-date {
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #2980b9;
+  width: 40%;
+}
+.data-day .data-day-header .header-date a {
+  font-weight: bold;
+}
+.data-day .data-day-header .nav-mm-left {
+  border: 1px solid #2980b9;
+  width: 10%;
+}
+.data-day .data-day-header .nav-ww-left {
+  border: 1px solid #2980b9;
+  width: 10%;
+}
+.data-day .data-day-header .nav-dd-left {
+  border: 1px solid #2980b9;
+  width: 10%;
+  vertical-align: middle;
+}
+.data-day .data-day-header .nav-dd-right {
+  border: 1px solid #2980b9;
+  width: 10%;
+}
+.data-day .data-day-header .nav-ww-right {
+  border: 1px solid #2980b9;
+  width: 10%;
+}
+.data-day .data-day-header .nav-mm-right {
+  border: 1px solid #2980b9;
+  width: 10%;
+}
+.data-day .data-day-body .day-row {
+  border: 1px solid #2980b9;
+  user-select: none;
+}
+.data-day .data-day-body .day-row .day-col-hour {
+  display: inline-block;
+  border-right: 1px solid #2980b9;
+  width: 4%;
+  vertical-align: middle;
+  text-align: center;
+}
+.data-day .data-day-body .day-row .day-col-schedule {
+  display: inline-block;
+  width: 95%;
+  text-align: left;
+  cursor: pointer;
+}
+.data-day .data-day-footer {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.data-month {
+  border: 1px solid #2980b9;
+  padding: 0px;
+  margin: 0px;
+}
+.data-month .data-month-header {
+  text-align: center;
+}
+.data-month .data-month-body {
+  border: 1px solid #2980b9;
+  display: block;
+}
+.data-month .data-month-body .month-body-header {
+  display: flex;
+  border-bottom: 1px solid #2980b9;
+}
+.data-month .data-month-body .month-body-header .day-of-ww {
+  border: 1px solid #2980b9;
+}
+.data-month .data-month-body .month-body-menu {
+  display: flex;
+}
+.data-month .data-month-body .month-body-menu .day-of-mm {
+  border: 1px solid #2980b9;
+}
+.data-month .data-month-footer {
+  text-align: center;
+}
