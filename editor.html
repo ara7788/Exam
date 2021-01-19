@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="data-editor" class="data-editor">
+        <form enctype="multipart/form-data" id="data-editor-1" method="post" action=" " class="data-editor-form">
+            <div class="data-editor-form-elements ">
+                <label for="text">Subject</label>
+                <input type="text" name="Subject " title="Subject">
+            </div>
+            <div class="data-editor-form-elements">
+                <label for="text">Location</label>
+                <input type="text" name="Location">
+            </div>
+            <div class="data-editor-form-elements">
+                <label for="date">Start Date</label>
+                <input type="date" name="StartDate">
+                <input type="time" name="StartTime">
+
+            </div>
+            <div class="data-editor-form-elements">
+                <label for="date">End Date</label>
+                <input type="date" name="EndDate">
+                <input type="time" name="EndTime">
+            </div>
+            <div class="data-editor-form-elements">
+                <label for="textare">Text area</label>
+                <textarea name="Area" id=" " cols="10" rows="10" class="data-editor-form-textarea"></textarea>
+            </div>
+
+            <div class="data-editor-from-elements">
+                <input type="button" value="Submit ">
+            </div>
+        </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js "></script>
+    <script src="js/editor.js "></script>
+</body>
+
+</html>

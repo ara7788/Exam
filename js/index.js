@@ -1,4 +1,4 @@
-//Date and time vars
+//Variables 
 const now = new Date();
 let day = now.getDate();
 let month = now.getMonth();
@@ -20,13 +20,10 @@ if (seconds < 10) {
 let dayDate = day + ' ' + monthNames[month] + ' ' + year;
 let currentTime = hour + ':' + minutes + ':' + seconds;
 
-//let scheduleOfDay = '';
-//let scheduleName = '';
-
-//Header and footer of page
-//$('.data-day-header').html('<h1><b>' + dayDate + '</b></h1>');
+//Footer
 $('.data-day-footer').html(currentTime);
 
+//Header and navigation
 let headMain = document.getElementById('day-header');
 
 let divHeadLeftMonth = document.createElement('div');
@@ -71,24 +68,17 @@ divHeadRightMonth.className = "nav-mm-right";
 divHeadRightMonth.innerHTML = '<a href="https://google.com">&raquo;</a>';
 headMain.appendChild(divHeadRightMonth);
 
-/*let mmA = document.createElement('a');
-mmA.href = "https://google.com";
-mmA.innerText = 'Month Back';
-divHead.appendChild(mmA);*/
-//document.getElementsByClassName('data-day-header').appendChild(divHead);
 
-
-
-//HTML container
+//Body
 let dayFragment = document.createDocumentFragment();
 for (let i = 0; i < 24; i++) {
 
-    //Add row for hours and items
+    //Rows
     let divRow = document.createElement('div');
     divRow.id = "day-row-" + i;
     divRow.className = "day-row";
 
-    //Add hours to page
+    //Hours
     let div = document.createElement('div');
     div.id = "day-hour-" + i;
     div.className = "day-col-hour";
@@ -99,15 +89,15 @@ for (let i = 0; i < 24; i++) {
     }
     divRow.appendChild(div);
 
-    //Add item of scheduler
+    //Scheduled items
     let div2 = document.createElement('div');
     div2.id = "day-schedule-" + i;
     div2.className = "day-col-schedule";
 
-    //Add link to details of the item
+    //Items links
     let a = document.createElement('a');
     a.href = "https://google.com"
-    a.innerText = 'url_g' + i;
+    a.innerText = ' Item-' + i;
     div2.appendChild(a);
     divRow.appendChild(div2);
 

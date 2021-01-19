@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="formElem" class="data-form" enctype="multipart/form-data">
+        <input type="text" name="name" value="John">
+        <input type="text" name="surname" value="Smith">
+        <input type="submit">
+    </form>
+
+    <script>
+        //Data from FORM to FormData and JSON
+        function handleSubmit(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+            //console.log(data);
+            const value = Object.fromEntries(data.entries());
+            //console.log({value});
+            let x = JSON.stringify(value);
+            console.log(x);
+
+        }
+        const from2 = document.querySelector("form");
+        from2.addEventListener('submit', handleSubmit);
+        ////////////////////
+
+        //Access to Form like Array, localStorage, sessionStorage
+        let form3 = document.querySelector("form");
+        //console.log('form3: ' + form3.length);
+        for (let i = 0; i < form3.length - 1; i++) {
+            //console.log(form3[i]);
+            console.log(form3[i].name + ': ' + form3[i].value);
+            localStorage.setItem(form3[i].name, form3[i].value);
+            sessionStorage.setItem(form3[i].name, form3[i].value);
+        }
+        //console.log(form3);
+
+        //BLOB - client side save file
+        //NODE.JS - server side save file, CRUD to DB
+        //JQUERY - CRUD to DB
+    </script>
+
+</body>
+
+</html>

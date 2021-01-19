@@ -25,6 +25,10 @@ body {
 	padding: 40px;
 }
 
+textarea {
+    width: 100%;
+}
+
 .data-day {
     border: 1px solid @primary;
     padding: 0px;
@@ -79,20 +83,17 @@ body {
     .data-day-body {
         
         .day-row {            
-            //border: 1px solid @primary;
+            border-bottom: 1px solid @primary;
             user-select: none;
 
             .day-col-hour {
                 display: inline-block;
                 border-right: 1px solid @primary;
-                border-bottom: 1px solid @primary;
                 width: 4%;
-                //vertical-align: middle;
                 text-align: center;
             }
             .day-col-schedule {
                 display: inline-block;
-                border-bottom: 1px solid @primary;
                 width: 95%;
                 text-align: left;
                 cursor: pointer;
@@ -172,5 +173,23 @@ body {
     }
     .data-week-footer {
         text-align: center;
+    }
+}
+.data-editor {
+    border: 1px solid @primary;
+    //border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+
+    .data-editor-form {
+        .data-editor-form-elements {
+            display: flex;
+            //border: 1px solid @primary;
+        }
+        
+        //.data-editor-form-textarea {}                        
+
+        //.data-editor-from-elements-button {}
+   
     }
 }
